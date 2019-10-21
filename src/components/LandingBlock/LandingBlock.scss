@@ -1,0 +1,12 @@
+.landing-container {
+  height: 80vh;
+  border: 1px solid red;
+  margin-top: 8em;
+  display: grid;
+  grid-template-columns: 30vw 1fr;
+  padding: 5vh 5vw;
+
+  > div {
+    border: 1px solid blue;
+  }
+}

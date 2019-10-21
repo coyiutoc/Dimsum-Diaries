@@ -1,0 +1,56 @@
+@import '../../index.scss';
+
+/* change the background color */
+.navbar-custom {
+  &.top{
+    height: 5em;
+    background-color: #000000;
+  }
+
+  &.bottom {
+    background-color: $light-blue;
+    height: 3em;
+  }
+}
+
+.title {
+  color: $yellow;
+  letter-spacing: 4px;
+  font-weight: bold;
+
+  &.left {
+    padding-right: 20px;
+  }
+
+  &.right {
+    padding-left: 20px;
+  }
+}
+
+.link {
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 400;
+
+  &.left {
+    padding-right: 50px;
+  }
+
+  &.right {
+    padding-left: 50px;
+  }
+
+  &:hover {
+    color: black;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+.block {
+  display: inline-block;
+}
