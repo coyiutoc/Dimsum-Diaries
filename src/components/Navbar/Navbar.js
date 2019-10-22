@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
+import appRoutes from "../../AppRoutes";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -8,11 +10,15 @@ const Navbar = () => {
       <nav className="navbar navbar-custom top">
         <div className="d-md-flex d-block flex-row mx-md-auto">
             <div className="navbar-brand container" href="#">
-              <div className="title left block">DIMSUM</div>
-              <a className = "block" href="#">
-                <img width="50" src={Logo}></img>
-              </a>
-              <div className="title right block">DIARIES</div>
+              <Link
+                to={`${appRoutes.home}`}
+              >
+                <div className="title left block">DIMSUM</div>
+                <a className = "block" href="#">
+                  <img width="50" src={Logo}></img>
+                </a>
+                <div className="title right block">DIARIES</div>
+              </Link>
             </div>
         </div>
       </nav>

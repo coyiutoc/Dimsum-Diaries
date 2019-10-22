@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import appRoutes from "../../AppRoutes";
+
 import "./Neighborhood.scss";
 
 const Neighborhood = (props) => {
@@ -30,13 +33,19 @@ const Neighborhood = (props) => {
               <h2>{restaurant.name}</h2>
               <p>{restaurant.tagLine}</p>
               <span>
-                <button class="read-more" href="#">READ MORE</button>
+                <Link
+                key={restaurant.id}
+                to={`${appRoutes.restaurant}/${name}/${restaurant.id}`}
+                >
+                  <button class="read-more" href="#">READ MORE</button>
+                </Link>
               </span>
               </div>
             </div>
           );
         })
       }
+
     </div>
   );
 };

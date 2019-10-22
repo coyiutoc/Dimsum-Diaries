@@ -1,31 +1,36 @@
 import React from 'react';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Switch, Route, Redirect } from "react-router-dom";
 
+import HomePage from "./pages/HomePage/HomePage";
+import RestaurantPage from "./pages/RestaurantPage/RestaurantPage";
+
+import appRoutes from "./AppRoutes";
 import NavBar from "./components/Navbar/Navbar";
-import LandingBlock from "./components/LandingBlock/LandingBlock";
-import Neighborhood from "./components/Neighborhood/Neighborhood";
 import Footer from "./components/Footer/Footer";
 
-import Data from "./data.js";
-
-function App() {
+const app = () => {
   return (
     <div>
       <NavBar />
-      <LandingBlock />
-      {Data.map((neighborhood, idx) => {
-        return (
-          <Neighborhood
-            id={neighborhood.name}
-            key={neighborhood.name}
-            data={Data}
-          />
-        );
-      })}
+        <Switch>
+          <Route exact path={appRoutes.home}>
+            <HomePage />
+          </Route>
+          <Route exact path={appRoutes.restaurant}>
+            <RestaurantPage />
+          </Route>
+            {/* <Route exact path={appRoutes.characters}>
+              <CharactersPage />
+            </Route>
+            <Route exact path={appRoutes.character}>
+              <CharacterPage />
+            </Route>
+            <Redirect to={appRoutes.home} /> */}
+        </Switch>
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default app;
