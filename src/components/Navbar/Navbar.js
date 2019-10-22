@@ -4,16 +4,16 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <div className = "fixed-top">
+    <div className = "fixed-top w-80 pl-5 pr-5">
       <nav className="navbar navbar-custom top">
         <div className="d-md-flex d-block flex-row mx-md-auto">
-            <a className="navbar-brand container" href="#">
+            <div className="navbar-brand container" href="#">
               <div className="title left block">DIMSUM</div>
               <a className = "block" href="#">
                 <img width="50" src={Logo}></img>
               </a>
               <div className="title right block">DIARIES</div>
-            </a>
+            </div>
         </div>
       </nav>
 

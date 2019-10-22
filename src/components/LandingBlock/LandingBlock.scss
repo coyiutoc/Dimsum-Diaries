@@ -1,12 +1,48 @@
+@import '../../index.scss';
+
 .landing-container {
-  height: 80vh;
-  border: 1px solid red;
+  height: 75vh;
   margin-top: 8em;
   display: grid;
-  grid-template-columns: 30vw 1fr;
-  padding: 5vh 5vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  padding: 5vh 5vw 5vh 5vw;
+}
 
-  > div {
-    border: 1px solid blue;
+.landing-block {
+  background-color: $yellow;
+  padding: 6vh 50px 6vh 50px;
+  max-height: 70vh;
+  overflow: auto;
+
+  h1 {
+    font-size: 2.0em;
+    font-weight: 800;
   }
+
+  .divider {
+    background-color: black;
+    height: 5px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+.landing-image {
+  grid-column: 2 / span2; 
+  /* The image used */
+  background-image: url("../../assets/landing-image.jpg");
+
+  /* Set a specific height */
+  // min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.test {
+  height: 100vh;
 }

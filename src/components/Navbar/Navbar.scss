@@ -1,7 +1,16 @@
 @import '../../index.scss';
 
+.pl-5 {
+  padding-left: 5vw !important;
+}
+
+.pr-5 {
+  padding-right: 5vw !important;
+}
+
 /* change the background color */
 .navbar-custom {
+
   &.top{
     height: 5em;
     background-color: #000000;
@@ -10,6 +19,7 @@
   &.bottom {
     background-color: $light-blue;
     height: 3em;
+    border-bottom: 2px solid white;
   }
 }
 
