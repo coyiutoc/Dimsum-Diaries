@@ -17,16 +17,9 @@ const app = () => {
           <Route exact path={appRoutes.home}>
             <HomePage />
           </Route>
-          <Route exact path={appRoutes.restaurant}>
+          <Route path={appRoutes.restaurant + "/:neighborhood/:restaurant"}>
             <RestaurantPage />
           </Route>
-            {/* <Route exact path={appRoutes.characters}>
-              <CharactersPage />
-            </Route>
-            <Route exact path={appRoutes.character}>
-              <CharacterPage />
-            </Route>
-            <Redirect to={appRoutes.home} /> */}
         </Switch>
       <Footer />
     </div>

@@ -1,0 +1,69 @@
+@import '../../index.scss';
+
+.restaurant-block {
+  margin-top: 8em;
+  display: grid;
+  grid-template-rows: 60vh 25vh 1fr; 
+  grid-template-columns: 1fr 50vw 1fr;
+  column-gap: 20px;
+  padding: 5vh 5vw 5vh 5vw;
+  width: 100%;
+
+  // >div {
+  //   border: 1px solid red;
+  // }
+
+  .icon {
+    font-size: 2vh;
+  }
+
+  .restaurant-header {
+    padding-top: 2vh;
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+
+    .publish-date {
+      letter-spacing: 3px;
+    }
+
+    .userRating {
+      float: right;
+
+      .thumbs-up-icon {
+        cursor: pointer;
+
+        &:hover {
+          color: $light-blue !important;
+        }
+      }
+
+      .rating-bubble {
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        width: 50px;
+        float: right;
+        margin-left: 10px;
+      }
+    }
+
+    .stars {
+      float: left
+    }
+  }
+
+  img {
+    grid-row: 1;
+    grid-column: 2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-body {
+    grid-row: 3;
+    grid-column: 2;
+    padding-top: 5vh;
+  }
+}

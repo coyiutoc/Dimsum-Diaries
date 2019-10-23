@@ -11,7 +11,6 @@ const Neighborhood = (props) => {
   let restaurants = null;
 
   for (let neighborhood of Data) {
-    debugger;
     if (neighborhood.name === name) {
       restaurants = neighborhood.restaurants;
       break;
@@ -26,7 +25,7 @@ const Neighborhood = (props) => {
       {
         restaurants.map((restaurant, idx) => {
           return (
-            <div className = "browse-item">
+            <div className = "browse-item" key = {restaurant.id}>
               <img src = {restaurant.img}
               />
               <div className = "content">
@@ -34,10 +33,9 @@ const Neighborhood = (props) => {
               <p>{restaurant.tagLine}</p>
               <span>
                 <Link
-                key={restaurant.id}
                 to={`${appRoutes.restaurant}/${name}/${restaurant.id}`}
                 >
-                  <button class="read-more" href="#">READ MORE</button>
+                  <button className="read-more" href="#">READ MORE</button>
                 </Link>
               </span>
               </div>
