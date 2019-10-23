@@ -81,7 +81,7 @@ class RestaurantBody extends Component {
   render() {
     return (
       <div className = "restaurant-block">
-        <img src={this.state.restoData.pgImg}></img>
+        <img src={this.state.restoData.img}></img>
         <div className="restaurant-header">
           <h1>{this.state.restoData.name}</h1> 
           <div className = "publish-date">PUBLISHED : {this.state.restoData.publishDate.toUpperCase()}</div>
