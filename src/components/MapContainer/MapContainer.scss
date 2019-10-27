@@ -1,0 +1,21 @@
+@import '../../index.scss';
+
+.map-container {
+  display: grid;
+  grid-template-columns: 30vw 1fr;
+  column-gap: 1vw;
+  height: 50vh;
+  margin-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  text-align: left;
+
+  > div {
+    // border: 1px solid red;
+  }
+
+  .address {
+    padding: 6vw 2vw 5vw 5vw;
+    background-color: $yellow;
+  }
+}
