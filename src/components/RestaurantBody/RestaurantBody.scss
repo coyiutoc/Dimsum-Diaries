@@ -1,7 +1,6 @@
 @import '../../index.scss';
 
 .restaurant-block {
-  margin-top: 8em;
   display: grid;
   grid-template-rows: 60vh 25vh 1fr; 
   grid-template-columns: 1fr 50vw 1fr;
@@ -65,5 +64,28 @@
     grid-row: 3;
     grid-column: 2;
     padding-top: 5vh;
+    text-align: center;
+  }
+}
+
+.bounce-me {
+  animation: bounce 0.5s infinite alternate;
+  -webkit-animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
   }
 }

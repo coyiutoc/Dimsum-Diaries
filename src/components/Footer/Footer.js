@@ -7,10 +7,9 @@ const Footer = () => {
     <div className = "footer">
       <div>
         <h3>NEIGHBORHOOD</h3>
-        <p>Burnaby</p>
-        <p>Richmond</p>
-        <p>North Vancouver</p>
-        <p>West Vancouver</p>
+        <a href="/#Burnaby"><p>Burnaby</p></a>
+        <a href="/#Downtown"><p>Downtown</p></a>
+        <a href="/#Richmond"><p>Richmond</p></a>
       </div>
       <div>
         <h3>CONTACT ME</h3>

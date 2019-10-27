@@ -41,6 +41,7 @@
   color: white;
   letter-spacing: 2px;
   font-weight: 400;
+  cursor: pointer;
 
   &.left {
     padding-right: 50px;
@@ -63,4 +64,9 @@
 
 .block {
   display: inline-block;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
 }

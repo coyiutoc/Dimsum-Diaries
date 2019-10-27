@@ -92,7 +92,7 @@ class RestaurantBody extends Component {
             </div>
             <div className = "userRating">
               <span>
-                <i className="fas fa-thumbs-up fa-2x thumbs-up-icon"
+                <i className="fas fa-thumbs-up fa-2x thumbs-up-icon bounce-me"
                    onClick = {() => this.incrementRating()}></i>
                 <div className="rating-bubble">{this.state.numUserRatings}</div>
               </span>

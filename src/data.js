@@ -1,11 +1,12 @@
 import jinJiang from "./assets/landing/jin-jiang.jpg";
-import jinJiang1 from "./assets/restaurants/jin-jiang/jin-jiang1.png";
-
 import comeAlong from "./assets/landing/come-along.jpg";
 import kirin from "./assets/landing/kirin.jpg";
 import dinesty from "./assets/landing/dinesty.jpg";
 import chefTony from "./assets/landing/chef-tony.jpg";
 import sunSuiWah from "./assets/landing/sun-sui-wah.jpg";
+import peaceful from "./assets/landing/peaceful.jpg";
+import meetFresh from "./assets/landing/meet-fresh.jpg";
+import dynasty from "./assets/landing/dynasty-seafood.jpg";
 
 export default [
   {
@@ -13,35 +14,70 @@ export default [
     restaurants: [
       {
         id: "jin-jiang",
-        name: "Jin Jiang Shanghainese Restaurant",
+        name: "Jin Jiang Shanghainese",
         tagLine: "The best baos you can get.",
-        numStars: 4,
-        numUserRatings: 15,
+        numStars: 5,
+        numUserRatings: 25,
         img: jinJiang,
-        pgImg: jinJiang1,
         publishDate: "February 10, 2019",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        text: "My family goes here religiously. If my grandparents approve of this place, then it's got the real good stuff. Overall very well-rounded place, when we go out with the family, we usually got a pot of Westlake Beef Soup and a ton of baos.",
       },
         {
         id: "come-along",
         name: "Come Along Restaurant",
-        tagLine: "For your Tau Foo Fah fix.",
+        tagLine: "The only place that will give me a bucket of tau foo fah.",
         numStars: 3,
         numUserRatings: 18,
         img: comeAlong,
         publishDate: "October 1, 2019",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        text: "They're a little more on the pricy side despite being in Burnaby. I honestly just go there for the tau foo fah, because it's the only place that serves it in a bucket (big tofu eater if you haven't noticed).",
       },
       {
         id: "kirin",
         name: "Kirin Seafood Restaurant",
         tagLine: "Har gaw and veggie dumplings done on point.",
         numStars: 4,
-        numUserRatings: 10,
+        numUserRatings: 30,
         img: kirin,
         publishDate: "September 23, 2019",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        text: "Another place that my family goes to regularly. You need a reservation or they won't even look at you (quite literally). If you manage to get in though, they are one of the consistently good chinese places in all of Vancouver.",
       }
+    ] 
+  },
+
+  {
+    name: "Downtown",
+    restaurants: [
+      {
+        id: "peaceful",
+        name: "Peaceful Restaurant",
+        tagLine: "One-stop shop for wonton noodles.",
+        numStars: 3,
+        numUserRatings: 21,
+        img: peaceful,
+        publishDate: "February 17, 2019",
+        text: "Little chinese place that's good for running in and out for wonton noodles. Ton of specials so it's convenient if you're desperate for take-out.",
+      },
+      {
+        id: "dynasty",
+        name: "Dynasty Seafood",
+        tagLine: "I could probably eat a basket of their chive dumplings.",
+        numStars: 4,
+        numUserRatings: 30,
+        img: dynasty,
+        publishDate: "September 23, 2019",
+        text: "Only managed to come here once since it's a bit out of the way, but otherwise probably around same quality as Kirin (so you need that reservation). Their shrimp/chive dumplings are hecking good.",
+      },
+        {
+        id: "meet-fresh",
+        name: "Meet Fresh",
+        tagLine: "For your Tau Foo Fah fix.",
+        numStars: 4,
+        numUserRatings: 18,
+        img: meetFresh,
+        publishDate: "October 1, 2019",
+        text: "More of a chinese dessert shop, but they've got it all. Black jelly, shaved ice, boba, and tau foo fah - all good, though pricy because of the downtown location.",
+      },
     ] 
   },
 
@@ -53,30 +89,30 @@ export default [
         name: "Chef Tony's",
         tagLine: "The all around go-to place for consistent, quality dim sum.",
         numStars: 4,
-        numUserRatings: 9,
+        numUserRatings: 33,
         img: chefTony,
         publishDate: "May 15, 2019",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        text: "The equivalent of Kirin/Dynasty in the Richmond area. Hard to book but consistently high quality.",
       },
       {
         id: "dinesty",
-        name: "Dinesty",
+        name: "Dinesty Dumpling House",
         tagLine: "For thos xiao long baos done right.",
-        numStars: 3,
-        numUserRatings: 5,
+        numStars: 5,
+        numUserRatings: 51,
         img: dinesty,
         publishDate: "February 9, 2019",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        text: "The made-in-Vancouver version of Din Tai Fung. I can eat a whole basket of those xiao long baos.",
       },
       {
         id: "sun-sui-wah",
         name: "Sun Sui Wah",
         tagLine: "Where to get that gai-lan in oyster sauce.",
-        numStars: 4,
+        numStars: 3,
         numUserRatings: 25,
         img: sunSuiWah,
         publishDate: "July 29, 2019",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        text: "If you're on your way to/from the airport, this is a good place to stop by. They have really good veggies for some reason.",
       }
     ] 
   }

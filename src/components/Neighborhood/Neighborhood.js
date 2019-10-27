@@ -18,7 +18,7 @@ const Neighborhood = (props) => {
   }
 
   return (
-    <div className = "neighborhood-block">
+    <div id={name} className = "neighborhood-block">
       <div className = "neighborhood-name"><h2>{name.toUpperCase()}</h2></div>
       <div></div>
       <div></div>
